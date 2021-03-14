@@ -13,9 +13,9 @@ class getnicknames():
         nicknames = []
         while b < 100:
             matches = json.loads(requests.get('http://api.vimeworld.ru/match/latest?count=100' + token).text)
-            actualmatch = json.loads(requests.get('https://api.vimeworld.ru/match/' + matches[b]["id"] + '?token=DmhkmGH7uojHGXjrxMixR9gBXWLQjkz').text)
+            actualmatch = json.loads(requests.get('https://api.vimeworld.ru/match/' + matches[b]["id"] + '?token='+ token).text)
             try: 
-                usernick = json.loads(requests.get('https://api.vimeworld.ru/user/' + str(actualmatch["players"][1]["id"]) + '?token=DmhkmGH7uojHGXjrxMixR9gBXWLQjkz').text)[0]["username"]
+                usernick = json.loads(requests.get('https://api.vimeworld.ru/user/' + str(actualmatch["players"][1]["id"]) + '?token=' + token).text)[0]["username"]
                 nicknames.append(usernick)
                 print(f'Парсинг: {b}/99 [Ник: {usernick}]')
                 b+=1
