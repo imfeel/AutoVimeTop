@@ -1,9 +1,9 @@
 import requests, json, time, os
 import webbrowser, getpass
 #import modules.getnicknames as getnicks
-os.system("title VimeTop AutoLiker by Yumix_")
+os.system("title VimeTop AutoLiker by g7tufix")
 token = 'YourApiDev'#/api dev
-usernick = 'Yumix_'
+usernick = 'g7tufix'
 userhash = 'userhashVT'
 class getnicknames(): 
     def main(): 
@@ -46,8 +46,8 @@ class program():
    \ \/ /    | |      / /\ \| | | | __/ _ \| |    | | |/ / _ | '__|
     \  /     | |     / ____ | |_| | || (_) | |____| |   |  __| |   
      \/      |_|    /_/    \_\__,_|\__\___/|______|_|_|\_\___|_|   
-                                [by Yumix_]
-""")#;webbrowser.open('https://vimetop.ru/player/Yumix_')
+                                [by g7tufix]
+""")#;webbrowser.open('https://vimetop.ru/player/g7tufix')
         program.start()
 if __name__ == '__main__': 
     try: 
